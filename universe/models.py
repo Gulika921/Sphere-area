@@ -19,7 +19,7 @@ class SpaceBody(NamedEntry):
 
     @property
     def sphere_area(self):
-        return round(4*pi*(self.diameter**2/4))
+        return round(self.diameter**2*pi, 1)
 
     class Meta:
         ordering = NamedEntry.Meta.ordering
